@@ -26,4 +26,4 @@ if __name__ == '__main__':
     with multiprocessing.Pool(processes=len(filenames)) as p:
         p.map(read_info, filenames)
     stop = datetime.now()
-    print(f'{stop - start} (многопроцессорный)')
+    print(f'{stop - start} (многопроцессный)')
